@@ -50,7 +50,7 @@ def get_crypto_prices():
         return None
 
 def send_reminders(chat_id):
-    reminder_times = ["09:00", "14:00", "00:16"]
+    reminder_times = ["09:00", "15:00", "21:00"]
     while True:
         now = datetime.datetime.now().strftime("%H:%M")
         if now in reminder_times:
